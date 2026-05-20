@@ -12,10 +12,10 @@ export ICON=/usr/share/icons/hicolor/scalable/apps/org.xfce.catfish.svg
 export DESKTOP=/usr/share/applications/org.xfce.Catfish.desktop
 export PATH_MAPPING='/usr/share/catfish:${SHARUN_DIR}/share/catfish'
 export DEPLOY_PYTHON=1
+export ALWAYS_SOFTWARE=1
 
 # Deploy dependencies
-quick-sharun /usr/bin/catfish \
-  /usr/share/catfish 
+quick-sharun /usr/bin/catfish /usr/share/catfish /usr/lib/libgtk-3.so*  
   
 # Additional changes can be done in between here
 
